@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.gstatic.com">
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/2bde2c19ff.js" crossorigin="anonymous"></script>
+    <title>Document</title>
+    <style>
+        :root {
+            color: #fff;
+            font-size: 100%;
+            font-family: 'Roboto', sans-serif;
+            --primary-color: #47f18c;
+            --primary-bg-color: #111a29;
+            --secondary-bg-color: #262f3b;
+            background-color: var(--primary-bg-color);
+            --anim-speed: 400ms;
+        }
+
+        .header {
+            max-width: 500px;
+            margin: auto;
+            padding: 15px 15px 0 15px;
+        }
+
+        .content {
+            max-width: 500px;
+            margin: auto;
+            padding: 0 15px 15px 15px;
+        }
+
+        h1 {
+            display: inline;
+            margin-top: 0;
+            font-size: 2rem;
+            font-weight: 500;
+            color: #fff;
+        }
+
+        .h1-icon {
+            color: var(--primary-color);
+        }
+
+        h2 {
+            margin: 0;
+            font-size: 1rem;
+            font-weight: 500;
+            color: var(--primary-color);
+        }
+
+        .tile {
+            background-color: var(--secondary-bg-color);
+            border-radius: 10px;
+            margin-top: 25px;
+        }
+
+        .tile-head {
+            background-color: #0c131e;
+            padding: 15px 20px;
+            border-radius: 10px 10px 0 0;
+        }
+
+        .tile-bullet {
+            margin-top: -1px;
+            padding: 15px 20px;
+            color: rgba(2555, 255, 2555, 0.3);
+            text-decoration: none;
+            width: calc(100% - 40px);
+            display: block;
+            position: relative;
+            transition: all var(--anim-speed) ease;
+            border-top: 1px solid #1c2532;
+        }
+
+        .tile-bullet:first-of-type {
+            margin-top: 0;
+        }
+
+        .tile-bullet:last-of-type {
+            border-radius: 0 0 10px 10px;
+        }
+
+        .tile-bullet:hover {
+            background-color: #1c2532;
+        }
+
+        .tile-bullet:hover:after {
+            opacity: 0;
+        }
+
+        /*.tile-bullet:after {
+            display: block;
+            content: " ";
+            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512'><path fill='%23fff' d='M432,320h-32c-8.8,0-16,7.2-16,16v112H64V128h144c8.8,0,16-7.2,16-16V80c0-8.8-7.2-16-16-16H48C21.5,64,0,85.5,0,112v352	c0,26.5,21.5,48,48,48l0,0h352c26.5,0,48-21.5,48-48l0,0V336C448,327.2,440.8,320,432,320z M488,0H360c-21.4,0-32,25.9-17,41	l35.7,35.7L135,320.4c-9.4,9.4-9.4,24.6-0.1,33.9c0,0,0,0,0.1,0.1l22.7,22.6c9.4,9.4,24.6,9.4,33.9,0.1c0,0,0,0,0.1-0.1l243.6-243.7	L471,169c15,15,41,4.5,41-17V24C512,10.7,501.3,0,488,0z'/></svg>");
+            background-size: 1rem 1rem;
+            height: 1rem;
+            width: 1rem;
+            position: absolute;
+            right: 0.5rem;
+            top: 50%;
+            opacity: 0.1;
+        }*/
+
+        h3 {
+            color: #fff;
+            font-weight: 400;
+            margin: 0;
+            margin-bottom: 0.25rem;
+            font-size: 1rem;
+        }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1><span class="h1-icon"><i class="fab fa-bitcoin"></i></span> Bitcoin: Useful Links</h1>
+    </div>
+    <div class="content">
+        <div class="tile">
+            <div class="tile-head">
+                <h2>Learn about Bitcoin</h2>
+            </div>
+            <a href="https://www.youtube.com/c/aantonop/videos" class="tile-bullet" target="_blank">
+                <h3>Andreas Antonopoulos</h3>
+                This is the exchange I used for the longest time
+            </a>
+            <a href="#" class="tile-bullet" target="_blank">
+                <h3>The Internet of Money: Volume 1 – 3</h3>
+                Books<br>
+            </a>
+        </div>
+        <div class="tile">
+            <div class="tile-head">
+                <h2>Exchanges</h2>
+            </div>
+            <a href="https://www.bitstamp.net/" class="tile-bullet" target="_blank">
+                <h3>Bitstamp</h3>
+                This is the exchange I used for the longest time
+            </a>
+            <a href="https://www.bsdex.de/" class="tile-bullet" target="_blank">
+                <h3>BSDEX</h3>
+                It’s part of the Börse Stuttgart
+            </a>
+            <a href="https://www.bitpanda.com/" class="tile-bullet" target="_blank">
+                <h3>Bitpanda</h3>
+                …
+            </a>
+        </div>
+        <div class="tile">
+            <div class="tile-head">
+                <h2>Transaction Fees</h2>
+            </div>
+            <a href="https://jochen-hoenicke.de/queue/#BTC,24h,weight" class="tile-bullet" target="_blank">
+                <h3>Johoe’s Bitcoin Mempool Statistics</h3>
+                …
+            </a>
+        </div>
+        <div class="tile">
+            <div class="tile-head">
+                <h2>Hardware Wallets</h2>
+            </div>
+            <a href="https://shop.trezor.io/" class="tile-bullet" target="_blank">
+                <h3>Trezor</h3>
+                …
+            </a>
+            <a href="https://shop.ledger.com/pages/hardware-wallets-comparison" class="tile-bullet" target="_blank">
+                <h3>Ledger</h3>
+                This is the one Marci uses mostly
+            </a>
+            <a href="https://coldcardwallet.com/" class="tile-bullet" target="_blank">
+                <h3>Coldcard</h3>
+                …
+            </a>
+        </div>
+        <div class="tile">
+            <div class="tile-head">
+                <h2>Apps</h2>
+            </div>
+            <a href="https://brd.com/" class="tile-bullet" target="_blank">
+                <h3>BRD</h3>
+                open source
+            </a>
+            <a href="https://bluewallet.io/" class="tile-bullet" target="_blank">
+                <h3>BlueWallet</h3>
+                open source
+            </a>
+        </div>
+        <div class="tile">
+            <div class="tile-head">
+                <h2>Software</h2>
+            </div>
+            <a href="https://electrum.org/" class="tile-bullet" target="_blank">
+                <h3>Electrum</h3>
+                A very capable open source wallet software that gives you more control than the software that comes with hardware wallets.<br>Only use it in combination with a hardware wallet!
+            </a>
+        </div>
+        <div class="tile">
+            <div class="tile-head">
+                <h2>Seeds</h2>
+            </div>
+            <a href="https://cryptosteel.com/shop/" class="tile-bullet" target="_blank">
+                <h3>Cryptosteel</h3>
+                An expensive but durable backup device for your seed phrase.
+            </a>
+        </div>
+    </div>
+</body>
+</html>
