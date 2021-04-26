@@ -6,7 +6,6 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.gstatic.com">
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap" rel="stylesheet">
-    <script src="https://kit.fontawesome.com/2bde2c19ff.js" crossorigin="anonymous"></script>
     <title>Document</title>
     <style>
         :root {
@@ -26,10 +25,13 @@
             padding: 15px 15px 0 15px;
         }
 
-        .content {
-            max-width: 500px;
-            margin: auto;
-            padding: 0 15px 15px 15px;
+        .header svg {
+            display: inline;
+            fill: var(--primary-color);
+            height: 2rem;
+            width: 2rem;
+            margin-right: 0.5ch;
+            vertical-align: -0.25rem;
         }
 
         h1 {
@@ -40,8 +42,10 @@
             color: #fff;
         }
 
-        .h1-icon {
-            color: var(--primary-color);
+        .content {
+            max-width: 500px;
+            margin: auto;
+            padding: 0 15px 15px 15px;
         }
 
         h2 {
@@ -91,19 +95,6 @@
             opacity: 0;
         }
 
-        /*.tile-bullet:after {
-            display: block;
-            content: " ";
-            background-image: url("data:image/svg+xml;utf8,<svg xmlns='http://www.w3.org/2000/svg' width='512' height='512'><path fill='%23fff' d='M432,320h-32c-8.8,0-16,7.2-16,16v112H64V128h144c8.8,0,16-7.2,16-16V80c0-8.8-7.2-16-16-16H48C21.5,64,0,85.5,0,112v352	c0,26.5,21.5,48,48,48l0,0h352c26.5,0,48-21.5,48-48l0,0V336C448,327.2,440.8,320,432,320z M488,0H360c-21.4,0-32,25.9-17,41	l35.7,35.7L135,320.4c-9.4,9.4-9.4,24.6-0.1,33.9c0,0,0,0,0.1,0.1l22.7,22.6c9.4,9.4,24.6,9.4,33.9,0.1c0,0,0,0,0.1-0.1l243.6-243.7	L471,169c15,15,41,4.5,41-17V24C512,10.7,501.3,0,488,0z'/></svg>");
-            background-size: 1rem 1rem;
-            height: 1rem;
-            width: 1rem;
-            position: absolute;
-            right: 0.5rem;
-            top: 50%;
-            opacity: 0.1;
-        }*/
-
         h3 {
             color: #fff;
             font-weight: 400;
@@ -115,7 +106,8 @@
 </head>
 <body>
     <div class="header">
-        <h1><span class="h1-icon"><i class="fab fa-bitcoin"></i></span> Bitcoin: Useful Links</h1>
+        <svg width="100%" height="100%" viewBox="0 0 64 64" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" xml:space="preserve" xmlns:serif="http://www.serif.com/" style="fill-rule:evenodd;clip-rule:evenodd;stroke-linejoin:round;stroke-miterlimit:2;"><g><path d="M63.039,39.741c-4.274,17.143 -21.637,27.576 -38.782,23.301c-17.138,-4.274 -27.571,-21.638 -23.295,-38.78c4.272,-17.145 21.635,-27.579 38.775,-23.305c17.144,4.274 27.576,21.64 23.302,38.784Zm-16.93,-12.3c0.637,-4.258 -2.605,-6.547 -7.038,-8.074l1.438,-5.768l-3.511,-0.875l-1.4,5.616c-0.923,-0.23 -1.871,-0.447 -2.813,-0.662l1.41,-5.653l-3.509,-0.875l-1.439,5.766c-0.764,-0.174 -1.514,-0.346 -2.242,-0.527l0.004,-0.018l-4.842,-1.209l-0.934,3.75c0,-0 2.605,0.597 2.55,0.634c1.422,0.355 1.679,1.296 1.636,2.042l-3.94,15.801c-0.174,0.432 -0.615,1.08 -1.609,0.834c0.035,0.051 -2.552,-0.637 -2.552,-0.637l-1.743,4.019l4.569,1.139c0.85,0.213 1.683,0.436 2.503,0.646l-1.453,5.834l3.507,0.875l1.439,-5.772c0.958,0.26 1.888,0.5 2.798,0.726l-1.434,5.745l3.511,0.875l1.453,-5.823c5.987,1.133 10.489,0.676 12.384,-4.739c1.527,-4.36 -0.076,-6.875 -3.226,-8.515c2.294,-0.529 4.022,-2.038 4.483,-5.155Zm-8.022,11.249c-1.085,4.36 -8.426,2.003 -10.806,1.412l1.928,-7.729c2.38,0.594 10.012,1.77 8.878,6.317Zm1.086,-11.312c-0.99,3.966 -7.1,1.951 -9.082,1.457l1.748,-7.01c1.982,0.494 8.365,1.416 7.334,5.553Z" style="fill-rule:nonzero;"/></g></svg>
+        <h1> Bitcoin: Useful Links</h1>
     </div>
     <div class="content">
         <div class="tile">
